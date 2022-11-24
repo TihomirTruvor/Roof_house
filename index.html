@@ -4,42 +4,98 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="main.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<title>Кровельный торговый дом - Интернет-магазин кровельных и фасадных материалов в СПб</title>
 </head>
 <body>
-	<header class="container">
-		<div class="top-menu">
-				<nav class="left-menu">
-					<ul class="left-menu__list">
-						<li class="left-menu__item">
-							<a class="left-menu__link" href="#">Почему металлочерепица?</a>
-						</li>
-						<li class="left-menu__item">
-							<a class="left-menu__link href="#">Почему мы?</a>
-						</li>
-						<li class="left-menu__item">
-							<a class="left-menu__link  href="#">Сопутствующие товары</a>
-						</li>
-					</ul>
-				</nav>
-				<section class="top-contact">
-					<a class="top-contact__order-call" href="#">Заказать звонок</a>
-					<a class="top-contact__phone" href="tel:+78129062434">+7 (812) 906-24-34</a>
-					<a href=""><img src="" alt="Иконка WhatsApp"></a>
-				</section>
+	<header class="header-wrapper">
+		<div class="container">
+			<div class="menu-wrapper">
+				<div class="top-menu">
+					<nav class="left-menu">
+						<ul class="left-menu__list">
+							<li class="left-menu__item">
+								<a class="left-menu__link" href="#">Почему металлочерепица?</a>
+							</li>
+							<li class="left-menu__item">
+								<a class="left-menu__link href="#">Почему мы?</a>
+							</li>
+							<li class="left-menu__item">
+								<a class="left-menu__link  href="#">Сопутствующие товары</a>
+							</li>
+						</ul>
+					</nav>
+					<section class="top-contact">
+						<a class="top-contact__order-call" href="#">Заказать звонок</a>
+						<a class="top-contact__phone" href="tel:+78129062434">
+							<svg class="top-contact__phone-icon"><use xlink:href="#ico-phone"></use></svg> +7 (812) 906-24-34
+						</a>
+						<a class="top-contact__wa" href="#"><svg class="top-contact__wa-icon"><use xlink:href="#ico-wa"></use></svg>WhatsApp</a>
+					</section>
+				</div>
+			</div>
 		</div>
-		<div class="top-wrapper container">
-			
+		<div class="top-wrapper">
+			<div class="container">
+				<div class="top-content">
+					<div class="title-block">
+						<a class="title-block__logo" href="#"><img src="img/logo2.png" alt=""></a>
+						<h1 class="title-block__text">Металлочерепица по самым выгодным ценам</h1>
+					</div>
+					<div class="search">
+						<svg class="icon-spy">
+							<use xlink:href="#ico-spy"></use>
+						</svg>
+						<input class="search__input" type="text" placeholder="Поиск по 10 000 товаров">
+						<button class="search__button" type="submit">Найти</button>
+					</div>
+				</div>
+			</div>
 		</div>
 			
 		
 		<div></div>
 	</header>
-	<main>
-		
+	<main class="main-content">
+			<section class="index-slider swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+				<!-- Slides -->
+					<div class="swiper-slide"><img src="img/sezon_akciya_1600x450.png" alt=""></div>
+					<div class="swiper-slide"><img src="img/sezon_akciya_1600x450.png" alt=""></div>
+					<div class="swiper-slide"><img src="img/sezon_akciya_1600x450.png" alt=""></div>
+				</div>
+				<!-- If we need pagination -->
+				<!-- <div class="swiper-pagination"></div>-->
+
+				<!-- If we need navigation buttons -->
+				<!-- <div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>-->
+
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</section>
+		<div class="container">
+		</div>
 	</main>
 	<footer>
 		
 	</footer>
+<!---- Коды SVG ---->
+		<svg width="0" height="0" style="position: absolute;visibility: hidden;">
+			<svg id="ico-phone"  viewBox="0 0 15 18" fill="none">
+				<path d="M10.1292 12.5083L11.4282 11.7583L13.4282 15.2224L11.6962 16.2224C9.30469 17.6031 6.24674 16.7838 4.86603 14.3923L1.86603 9.19615C0.485313 6.80469 1.30469 3.74674 3.69615 2.36603L5.4282 1.36603L7.4282 4.83013L6.12917 5.58013L5.26314 6.08013L5.76314 6.94615L8.76314 12.1423L9.26314 13.0083L10.1292 12.5083Z" stroke="#414141" stroke-width="2" ></path>
+			</svg>
+			<svg id="ico-wa" viewBox="0 0 24 24" fill="#414141">
+				<path d="M12.012 2c-5.506 0-9.988 4.478-9.99 9.984-.001 1.76.46 3.478 1.334 4.992L2 22l5.232-1.236a9.98 9.98 0 0 0 4.773 1.215h.004c5.505 0 9.985-4.479 9.988-9.984a9.92 9.92 0 0 0-2.922-7.066A9.92 9.92 0 0 0 12.012 2zm-.002 2a7.95 7.95 0 0 1 5.652 2.342 7.93 7.93 0 0 1 2.336 5.65 8 8 0 0 1-11.807 7.016l-.674-.367-.744.176-1.969.465.48-1.785.217-.801-.414-.719a7.98 7.98 0 0 1-1.066-3.992A8 8 0 0 1 12.01 4zM8.477 7.375c-.167 0-.437.063-.666.313s-.875.852-.875 2.08.895 2.415 1.02 2.582 1.727 2.766 4.264 3.766c2.108.831 2.536.667 2.994.625s1.478-.603 1.686-1.186.208-1.085.146-1.187-.229-.166-.479-.291-1.476-.728-1.705-.811-.396-.125-.562.125-.643.811-.789.977-.291.189-.541.064-1.054-.39-2.008-1.24a7.52 7.52 0 0 1-1.389-1.727c-.145-.249-.014-.386.111-.51.112-.112.248-.292.373-.437s.167-.25.25-.416.041-.312-.021-.437-.548-1.358-.77-1.852c-.187-.415-.384-.425-.562-.432-.145-.006-.311-.006-.477-.006z" stroke="#414141" stroke-width="0.5"></path>
+			</svg>
+			<svg id="ico-spy" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="8" cy="8.5" r="7" stroke="#414141" stroke-width="2"></circle>
+				<line x1="13.4143" y1="13.8333" x2="16.6667" y2="17.0858" stroke="#414141" stroke-width="2" stroke-linecap="round"></line>
+			</svg>
+		</svg>
+<!---- Скрипты ---->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="index_slider.js" type="text/javascript"></script>
 </body>
 </html>
