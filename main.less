@@ -8,6 +8,39 @@ body {
 h1 {
 	color: #414141;
 }
+h2 {
+	position: relative;
+    padding-bottom: 2rem;
+	margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 48px;
+    line-height: 62px;
+	color: #212529;;
+}
+h2::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 173px;
+	height: 4px;
+	background: #92C820;
+	border-radius: 2px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	box-sizing: border-box;
+}
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+	margin-top: 0;
+    height: 3.6rem;
+}
 p {
 	font-size: 14px;
 	color: #414141;
@@ -30,6 +63,10 @@ li {
 svg {
 	overflow: hidden;
 	vertical-align: middle;
+}
+img {
+	vertical-align: middle;
+    border-style: none;
 }
 
 .container {
@@ -60,16 +97,15 @@ svg {
 	top: 0;
 	z-index: 10;
 	background:#fff;
-	display: flex;
-	justify-content: space-between;
 	width: 100%;
-	max-width: 1180px;
+
 
 	.top-menu {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+		max-width: 1180px;
 		padding: 10px 0;
 		
 		.left-menu {
@@ -250,6 +286,53 @@ svg {
 				background-color: #92C820;
 			}
 
+		}
+	}
+	/*Блок почему?*/
+	.why-header {
+
+	}
+
+	.why-content {
+		display: flex;
+		justify-content: space-between;
+
+		.why-content__item {
+			max-width: 32%;
+			//height: fit-content;
+			overflow: hidden;
+			border-radius: 16px;
+			a {
+				width: 100%;
+				overflow: hidden;
+				.why-content__img {
+					width: 100%;
+					overflow: hidden;
+					margin-bottom: 20px;
+					border-radius: 16px;
+					transition: 0.5s; /* Время эффекта */
+				}
+				.why-content__img:hover {
+					overflow: hidden;
+					transform: scale(1.05) rotate(1deg);
+				}
+			}
+			a:hover {
+				color: #92C820;
+			}
+		}
+	} 
+	.index-catalog {
+		.index-catalog__title {
+
+		}
+		.index-catalog-list {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			.index-catalog-item {
+				
+			}
 		}
 	}
 }
