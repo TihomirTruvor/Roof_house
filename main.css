@@ -349,6 +349,13 @@ img {
 .main-content .why-content .why-content__item a:hover {
   color: #92C820;
 }
+.main-content .index-catalog .index-catalog__img {
+  display: flex;
+  justify-content: center;
+}
+.main-content .index-catalog .index-catalog__img img {
+  margin: 0 auto;
+}
 .main-content .index-catalog .index-catalog-list {
   display: flex;
   justify-content: space-between;
