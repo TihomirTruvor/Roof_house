@@ -639,10 +639,69 @@ img {
 .main-content .related-product .related-product-list .related-product-item .related-product-item__text .button-add:hover .icon {
   stroke: #fff;
 }
-.main-content .index-text h2 {
-  text-align: left;
+.main-content .index-text p {
+  margin: 0 auto;
+  max-width: 70%;
+  text-align: justify;
+  font-size: 16px;
 }
-.main-content .index-text h2::after {
-  left: 0;
-  transform: none;
+.main-content .index-benefits {
+  padding-top: 3rem;
+}
+.main-content .index-benefits .index-benefits__list {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+.main-content .index-benefits .index-benefits__list .index-benefits__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+}
+.main-content .index-benefits .index-benefits__list .index-benefits__item p {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+.main-content .index-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content .index-review .index-review__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.main-content .index-review .index-review__list .index-review__item {
+  max-width: 280px;
+}
+.main-content .index-review .index-review__list .index-review__item a img {
+  width: 100%;
+}
+.main-content .index-review .button-all {
+  width: fit-content;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #92C820;
+  background: none;
+  border: 2px solid #92C820;
+  line-height: 22px;
+  border-radius: 16px;
+  padding: 9px 20px;
+  transition: all 0.25s ease-in-out;
+}
+.main-content .index-review .button-all .icon-cart {
+  width: 22px;
+  height: 24px;
+  padding-left: 12px;
+  transition: all 0.25s ease-in-out;
 }

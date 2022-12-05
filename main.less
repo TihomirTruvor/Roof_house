@@ -631,11 +631,82 @@ img {
 	}
 	.index-text {
 		h2 {
-			text-align: left;
+			//text-align: left;
 		}
 		h2::after {
-			left: 0;
-    		transform: none;
+			//left: 0;
+    		//transform: none;
+		}
+		p {
+			margin: 0 auto;
+			max-width: 70%;
+			text-align: justify;
+			font-size: 16px;
+		}
+	}
+	.index-benefits {
+		padding-top: 3rem;
+
+		.index-benefits__list {
+			display: flex;
+			justify-content: space-between;
+			width: 70%;
+			margin: 0 auto;
+
+			.index-benefits__item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 15%;
+
+				p {
+					margin-bottom: 0;
+					text-align: center;
+					font-size: 12px;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+	.index-review {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2 {
+			//text-align: left;
+		}
+		h2::after {
+			//left: 0;
+    		//transform: none;
+		}
+		.index-review__list {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			width: 100%;
+			padding-bottom: 3rem;
+
+			.index-review__item {
+				max-width: 280px;
+				a {
+					img {
+						width: 100%;
+					}
+				}
+
+			}
+		}
+		.button-all {
+			width: fit-content;
+			font-weight: 600;
+			.border-button;
+
+			.icon-cart {
+				width: 22px;
+				height: 24px;
+				padding-left: 12px;
+				transition: all 0.25s ease-in-out;
+			}
 		}
 	}
 }
